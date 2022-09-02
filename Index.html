@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<h1>My Item is This Long:</h1>
+	
+	<label>Select Unit:</label>
+	<select id="unit">
+		<option value="0" selected>Inches</option>
+		<option value="1">Feet</option>
+		<option value="2">Yards</option>
+		<option value="3">Miles</option>
+	</select>
+
+	<br>
+	
+	<label>Enter Length:</label>
+	<input type="number" id="inputLength" value=0></input>
+
+	<br>
+
+	<button onclick="convertRun()">Convert</button>
+	<button onclick="resetRun()">Reset</button>
+
+	<br>
+
+	<div class="outputFields" id="outputField">
+		<p>Your Item is:</p>
+		<p id="outputMiles">0 Miles,</p>
+		<p id="outputYards">0 Yards,</p>
+		<p id="outputFeet">0 Feet,</p>
+		<p id="outputInches">0 Inches</p>
+	</div>
+
+	<br>
+
+	<div id="compareField" class="outputFields">
+		<p>Your Item is comparable to the:</p>
+		<p id="outputCompare">Nothing...</p>
+	</div>
+
+	<div id="historyField" class="outputFields">
+	</div>
+	<button onclick="clearHistory()">Clear</button>
+	
+  <script src="script.js"></script>
+</body>
+
+</html>
